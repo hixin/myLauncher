@@ -1,0 +1,57 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+    <style name="AnimActivityTheme">
+    <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+	</style>
+	
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+    <item name="android:activityOpenEnterAnimation">@anim/in_from_left</item>
+    <item name="android:activityOpenExitAnimation">@anim/out_from_right</item>
+    <item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>
+    <item name="android:activityCloseExitAnimation">@anim/out_from_left</item>
+	</style>	
+	
+    <style name="topbar_bg">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">46.0dip</item>
+    </style>
+    
+    <style name="topbar_text">
+	    <item name="android:textSize">30sp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textColor">#ffffffff</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:shadowColor">#40000000</item>
+	    <item name="android:shadowDy">-2.0</item>
+	    <item name="android:shadowRadius">4.0</item>
+	    <item name="android:layout_centerInParent">true</item>
+    </style>
+    
+    <style name="topbar_btn">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="topbar_left_btn" parent="@style/topbar_btn">
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    
+    <style name="topbar_right_btn" parent="@style/topbar_btn">
+        <item name="android:layout_marginRight">10.0dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+</resources>

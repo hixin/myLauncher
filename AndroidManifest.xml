@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.highxin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/> 
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+	
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    
+  
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+     <uses-permission android:name="android.permission.READ_SMS" />
+     <uses-permission android:name="android.permission.GET_TASKS" /> 
+     
+ 
+    <application
+        android:name="com.highxin.contact.MyApplication"
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"  >
+        <activity
+            android:name="com.highxin.launcher01.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/AnimActivityTheme" 
+            android:screenOrientation="nosensor"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true" 
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateUnspecified|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+             	<category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           
+        </activity>
+        <activity
+            android:name="com.highxin.launcher01.Contacts"
+            android:label="@string/app_name">
+             
+        </activity>
+         <activity
+            android:name="com.highxin.launcher01.Contacts_edit"
+            android:label="@string/app_name">
+             
+        </activity>
+          <activity
+            android:name="com.highxin.launcher01.Contacts_detail"
+            android:label="@string/app_name"> 
+        </activity>
+          <activity
+            android:name="com.highxin.launcher01.Message"
+            android:label="@string/app_name"> 
+        </activity>
+         <activity
+            android:name="com.highxin.launcher01.Contacts_new"
+            android:label="@string/app_name"> 
+        </activity>
+         <activity
+            android:name="com.highxin.launcher01.AppList"
+            android:label="@string/app_name"> 
+        </activity>
+        
+        <activity
+            android:name="com.highxin.contact.Contact_detail"
+            android:label="@string/app_name"> 
+        </activity>
+        <activity
+            android:name="com.highxin.contact.Dial_Contact"
+            android:label="@string/app_name"> 
+        </activity>
+        
+        
+        <activity
+            android:name="com.highxin.message.HomeSMSActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" >
+        </activity>
+     
+        <activity
+            android:name="com.highxin.message.MessageBoxList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.highxin.message.NewSMSActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
+        </activity>
+         <activity
+            android:name="com.highxin.message.SelectContactsToSendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" >
+        </activity>
+       <service 
+            android:enabled="true" 
+            android:name="com.highxin.launcher01.LightService" >     
+        </service>
+        <service
+            android:name="com.highxin.contact.T9Service" >
+         </service>
+    </application>
+ 
+</manifest>

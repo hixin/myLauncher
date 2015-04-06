@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.highxin.launcher01.MainActivity" >
+    
+     <ImageView
+	        android:id="@+id/cursor"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/a" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+	
+</LinearLayout>

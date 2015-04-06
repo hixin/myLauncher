@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">老人桌面</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color  name="gray">#666666</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark">#313131</color>
+    <color name="dark2">#626262</color>
+    <color name="darkwhite">#dadada</color>
+    <color name="listbackground">#252932</color>
+ 
+</resources>

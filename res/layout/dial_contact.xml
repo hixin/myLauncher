@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.test_viewpager_fragment.MainActivity" >
+	
+    <LinearLayout 
+         android:id="@+id/title"
+         android:layout_width="match_parent"
+         android:layout_alignParentTop="true"
+         android:layout_height="60dp"
+         android:background="#999999">
+
+		<Button
+  			android:id="@+id/bt_fdial"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="#00999999"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:text="拨号"/>
+		<Button
+  			android:id="@+id/bt_fcontact"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="#00999999"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:text="联系人"/>
+      
+   </LinearLayout>
+ <LinearLayout 
+         android:id="@+id/btm"
+         android:layout_width="match_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_height="60dp"
+         android:gravity="center"
+         android:background="#999999">
+		 <ImageButton 
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:id="@+id/bt_fdialpan"
+         android:background="#00999999"
+         android:paddingLeft="20dp"
+         android:paddingRight="20dp"
+         android:layout_gravity="center"
+         android:src="@drawable/keyboard_show"
+         android:visibility="gone"
+         />
+		<ImageButton
+  			android:id="@+id/bt_fnewcontact"
+            android:layout_width="50dp"
+        	android:layout_height="50dp"
+            android:background="#00999999"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/dial_newcontact"
+        	 />
+   </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_above="@id/btm"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+  
+ 
+</RelativeLayout>

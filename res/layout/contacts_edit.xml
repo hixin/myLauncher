@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+      <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:gravity="center|right"
+         android:background="@color/dark"
+         android:orientation="horizontal">
+
+		<Button
+  			android:id="@+id/bt_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="完成"/>
+        
+   </LinearLayout>
+    <LinearLayout android:id="@+id/listLinearLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView 
+            android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/image"
+            />
+        <EditText
+             android:id="@+id/et_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="40sp"
+            android:background="@android:drawable/edit_text"/>
+        <EditText    
+            android:id="@+id/et_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="40sp"
+            android:inputType="phone"
+            android:background="@android:drawable/edit_text"/>
+    </LinearLayout>
+</LinearLayout>
